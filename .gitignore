@@ -1,0 +1,9 @@
+# Pycharm related excludes
+/venv/
+/.idea/
+
+# Generated files that should not be uploaded
+/Data Analysis/log-file/log.csv
+
+# Files used only locally (for example as a space to quickly test code snippets before transferring them to a real file)
+/Data Analysis/test.py
