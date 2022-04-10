@@ -40,13 +40,13 @@ plotUV.plot(time, UV, color="magenta")
 
 #----------------------
 plotTempBMP.set_title("TemperatureBMP")
-plotTempBMP.set_xlabel("temperature (°C)")
-plotTempBMP.set_ylabel("time (ms)")
+plotTempBMP.set_xlabel("time (ms)")
+plotTempBMP.set_ylabel("temperature (°C)")
 plotTempBMP.plot(time,temperatureBMP, color="blue")
 
 plotTempMPU.set_title("TemperatureMPU")
-plotTempMPU.set_xlabel("temperature (°C)")
-plotTempMPU.set_ylabel("time (ms)")
+plotTempMPU.set_xlabel("time (ms)")
+plotTempMPU.set_ylabel("temperature (°C)")
 plotTempMPU.plot(time,temperatureMPU, color="blue")
 
 
