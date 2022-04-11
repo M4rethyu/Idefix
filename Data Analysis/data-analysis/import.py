@@ -6,7 +6,7 @@ file = "../log-file/log.csv"
 data = np.loadtxt(file, delimiter=",", dtype=float)
 
 # Unpack matrix into arrays
-time, pressure, height, temperatureBMP, temperatureMPU, AcX, AcY, AcZ, GyX, GyY, GyZ, UV = np.hsplit(data, 12)
+time, pressure, temperatureBMP, height, AcZ, AcX, AcY, temperatureMPU, GyX, GyY, GyZ, UV = np.hsplit(data, 12)
 
 # Plot height and pressure against time
 plotHeight = plt.subplot2grid((3, 4), (0, 0))
