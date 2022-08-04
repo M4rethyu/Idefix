@@ -1,3 +1,5 @@
+#include "ErrorCodes.h"
+
 void sendErrorCode(int num){
 	switch(num){
     case 1:

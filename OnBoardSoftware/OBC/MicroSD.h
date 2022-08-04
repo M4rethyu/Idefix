@@ -11,6 +11,9 @@ SCK  - D13
 CS   - D9
 */
 
+#ifndef MICROSD_H_
+#define MICROSD_H_
+
 #include <SD.h>
 
 #define CS_SD 9
@@ -18,3 +21,5 @@ CS   - D9
 File file;
 
 bool initializeMicroSD();
+
+#endif

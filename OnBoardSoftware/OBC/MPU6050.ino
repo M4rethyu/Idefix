@@ -1,3 +1,5 @@
+#include "MPU6050.h"
+
 void initializeMPU6050(){
   Wire.begin();
   Wire.beginTransmission(MPU6050_ADDR);

@@ -11,6 +11,9 @@ AD0 - GND
 other pins unconnected
 */
 
+#ifndef MPU6050_H_
+#define MPU6050_H_
+
 #include "Wire.h" 
 #define MPU6050_ADDR 0x68 // Alternatively set AD0 to HIGH  --> Address = 0x69
 
@@ -19,3 +22,5 @@ int16_t accX, accY, accZ, gyroX, gyroY, gyroZ, tRaw;	//Register
 void initializeMPU6050();								//Initialize I²C connection
 
 String getMPU6050Data();								//Read data from sensor
+
+#endif

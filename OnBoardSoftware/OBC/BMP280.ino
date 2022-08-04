@@ -1,3 +1,5 @@
+#include "BMP280.h"
+
 bool initializeBMP280(){
 	return bmp.begin(BMP280_I2C_ADDRESS);
 }

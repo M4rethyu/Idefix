@@ -11,6 +11,9 @@ CSB - unconnected
 SDO - GND
 */
 
+#ifndef BMP280_H_
+#define BMP280_H_
+
 #include <Adafruit_BMP280.h>
 /*
 SPI connections
@@ -33,3 +36,5 @@ String getBMP280Pressure();
 String getBMP280Temperature();
 
 String getBMP280Altitude(float pressureAtSeaLevelhPa);
+
+#endif
