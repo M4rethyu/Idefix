@@ -21,7 +21,7 @@ other pins unconnected
 int16_t accX, accY, accZ, gyroX, gyroY, gyroZ, tRaw; // Raw register values (accelaration, gyroscope, temperature)
 
 void setup() {
-  //Debugging
+ /* //Debugging
   Serial.begin(9600);
   while (!Serial) {;}
 
@@ -31,11 +31,21 @@ void setup() {
   Wire.write(0x6B); // PWR_MGMT_1 register
   Wire.write(0); // wake up!
   Wire.endTransmission(true);
+  */
+
+ pinMode(LED_BUILTIN, OUTPUT);
 }
 
 
 void loop() {
-  Wire.beginTransmission(MPU6050_ADDR);
+  Serial.print("test1");
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(250);
+  Serial.print("test2");
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(250);
+  Serial.print("test3");
+/*  Wire.beginTransmission(MPU6050_ADDR);
   
   Wire.write(0x3B); // starting with register 0x3B (ACCEL_XOUT_H)
 
@@ -64,4 +74,5 @@ void loop() {
   Serial.print(" | GyZ = "); Serial.print(gyroZ);
   Serial.println();
   delay(1000);
+  */
 }
